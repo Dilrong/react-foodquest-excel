@@ -3,14 +3,14 @@ import { Container } from 'semantic-ui-react';
 import './Footer.css'
 
 const Footer = () => (
-    <div className='footer' >
+    <footer className='footer' >
         <p className='text'>
-        <a href='https://www.bluefrog.co.kr'>Bluefrog<br/></a>
-        대표자 이준석 | 25, Cheonghak-ro 12beon-gil, Yeonsu-gu, Incheon, Republic of Korea<br/>
-        TEL. 070-8802-0509 | EMAIL. bluefrog@bluefrog.co.kr<br/>
-        Copyright 2018. Bluefrog Co. All rights reserved.<br/>
+        회사명: FOODQUEST | 대표자: 전재윤 | 사업자등록번호: 440-01-00485<br/>
+        주소: 인천광역시 연수구 청학동 535-3 지하 | 홈페이지: www.foodquest.co.kr<br/>
+        전화번호 : 010-6734-7345 | 팩스: 032-232-1562<br/>
+        Copyright 2018. FOODQUEST Co. All rights reserved.
         </p>
-    </div>
+    </footer>
 )
 
 export default Footer;

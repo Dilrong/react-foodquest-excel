@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Container, Loader, Image, Menu, Input, Button } from 'semantic-ui-react';
+import { Container, Loader, Image, Menu, Input, Button, Popup } from 'semantic-ui-react';
 import { BestCard } from '../../components';
 import logo from '../../images/logo.svg';
 import './MainContainer.css';
@@ -51,13 +51,12 @@ export default class MainContainer extends Component{
                 }
             );
         }
-
         return(
             <Container>
                 <Container>
                     <Menu stackable>
                     <Menu.Item>
-                        <Image className="logo" size='small' src={logo}/>
+                        <Image className='logo' size='medium' src={logo}/>
                     </Menu.Item>
                     <Menu.Item position='right'>
                         <Input 
@@ -70,7 +69,9 @@ export default class MainContainer extends Component{
                 </Menu>
             </Container>
                 {isLoading ? (mapToCards(data.reverse())) : (<Loader className='loader' active size='big' inline='centered'>Loading</Loader>)}
-                <a href='https://goo.gl/forms/oXjtmkt4AbZe2At52'><Button className='write' circular icon='pencil' color='yellow'/></a>
+                <a href='https://goo.gl/forms/oXjtmkt4AbZe2At52'>
+                <Popup trigger={<Button className='write' id='plus_button' circular icon='plus' color='yellow' size='huge'/>} content='당신의 맛집을 입력해주세요.' position='top center'/>
+                </a>
             </Container>
         )
     }
