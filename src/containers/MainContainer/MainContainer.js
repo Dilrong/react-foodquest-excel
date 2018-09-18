@@ -25,7 +25,7 @@ export default class MainContainer extends Component{
     }
 
     _callSheetData = async() => {
-        return fetch('http://foodquest.co.kr:3001/api?id=1mFPxl0jTEgqqG6Gf4KYLP2O_87eLIpRGuTBvE2NoJ24&columns=false')
+        return fetch('http://gsx2json.foodquest.co.kr/api?id=1mFPxl0jTEgqqG6Gf4KYLP2O_87eLIpRGuTBvE2NoJ24&columns=false')
         .then(request => request.json())
         .catch(err => console.log(err))
     }
