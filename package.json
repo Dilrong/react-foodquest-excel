@@ -6,7 +6,7 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-scripts": "1.1.5",
-    "semantic-ui-css": "^2.3.3",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.82.3"
   },
   "scripts": {
